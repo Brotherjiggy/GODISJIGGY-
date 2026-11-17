@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <title>Choose Your Region — GODISJIGGY®</title>
+  <link rel="stylesheet" href="region.css">
+  <script src="region.js" defer></script>
+</head>
+<body>
+  <header class="region-header">
+    <a href="index.html" class="logo">GODISJIGGY<span>®</span></a>
+    <span>INTERNATIONAL STORE</span>
+  </header>
+
+  <main class="region-main">
+    <div class="region-intro">
+      <p class="eyebrow">ONE WORLD. ONE MOVEMENT.</p>
+      <h1>WHERE ARE<br>YOU SHOPPING<br><span>FROM?</span></h1>
+      <p>Choose your shopping destination to see the appropriate currency and regional experience.</p>
+    </div>
+
+    <section class="region-panel">
+      <label for="country">SELECT YOUR COUNTRY / REGION</label>
+      <select id="country">
+        <option value="NG">Nigeria</option>
+        <option value="US">United States</option>
+        <option value="GB">United Kingdom</option>
+        <option value="EU">European Union</option>
+        <option value="GH">Ghana</option>
+        <option value="ZA">South Africa</option>
+        <option value="CA">Canada</option>
+        <option value="AU">Australia</option>
+        <option value="ROW">Rest of the World</option>
+      </select>
+
+      <label for="currency">DISPLAY CURRENCY</label>
+      <select id="currency">
+        <option value="NGN">NGN — Nigerian Naira</option>
+        <option value="USD">USD — US Dollar</option>
+        <option value="GBP">GBP — British Pound</option>
+        <option value="EUR">EUR — Euro</option>
+        <option value="GHS">GHS — Ghanaian Cedi</option>
+        <option value="ZAR">ZAR — South African Rand</option>
+        <option value="CAD">CAD — Canadian Dollar</option>
+        <option value="AUD">AUD — Australian Dollar</option>
+      </select>
+
+      <button id="save-region">ENTER GODISJIGGY ↗</button>
+      <p id="region-message" aria-live="polite"></p>
+      <small>You can change your region at any time.</small>
+    </section>
+
+    <div class="region-footer">
+      <span>GODISJIGGY® — BUILT FOR THE DIFFERENT.</span>
+      <a href="index.html">BACK TO STORE ↗</a>
+    </div>
+  </main>
+</body>
+</html>
