@@ -212,6 +212,7 @@ document.addEventListener("DOMContentLoaded", () => {
   startSlideshow();
 
 
+  
   /* =========================================
      04. MOBILE NAVIGATION
   ========================================= */
@@ -220,6 +221,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const navigation = document.querySelector(".desktop-nav");
 
   if (menuToggle && navigation) {
+
+    function closeNavigation() {
+      navigation.classList.remove("is-open");
+
+      menuToggle.textContent = "☰";
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open menu");
+    }
 
     menuToggle.addEventListener("click", () => {
 
@@ -238,18 +247,34 @@ document.addEventListener("DOMContentLoaded", () => {
       menuToggle.textContent = isOpen ? "✕" : "☰";
     });
 
+    // Close menu when a navigation link is selected
     navigation.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", closeNavigation);
+    });
 
-      link.addEventListener("click", () => {
-        navigation.classList.remove("is-open");
+    // Close menu automatically when the visitor scrolls
+    window.addEventListener("scroll", () => {
+      if (
+        navigation.classList.contains("is-open") &&
+        window.matchMedia("(max-width: 760px)").matches
+      ) {
+        closeNavigation();
+      }
+    }, { passive: true });
 
-        menuToggle.textContent = "☰";
-        menuToggle.setAttribute("aria-expanded", "false");
-      });
-
+    // Close menu if the visitor taps outside it
+    document.addEventListener("click", event => {
+      if (
+        navigation.classList.contains("is-open") &&
+        !navigation.contains(event.target) &&
+        !menuToggle.contains(event.target)
+      ) {
+        closeNavigation();
+      }
     });
 
   }
+
 
 
   /* =========================================
