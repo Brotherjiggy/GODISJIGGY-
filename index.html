@@ -5,194 +5,824 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#080808">
-  <meta name="description" content="GODISJIGGY — Beyond fashion. A lifestyle. Discover exclusive streetwear, footwear and accessories.">
-  <title>GODISJIGGY® — Beyond Fashion</title>
+
+  <meta name="description" content="GODISJIGGY® — Beyond fashion. A lifestyle. Discover exclusive streetwear, footwear, bags, accessories and the JIGGY universe.">
+
+  <meta property="og:title" content="GODISJIGGY® — Beyond Fashion">
+  <meta property="og:description" content="For the ones who move differently. Enter the JIGGY universe.">
+  <meta property="og:type" content="website">
+
+  <title>GODISJIGGY® — Beyond Fashion. A Lifestyle.</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
+
   <script src="products.js" defer></script>
   <script src="app.js" defer></script>
 </head>
+
 <body>
+
+  <!-- ANNOUNCEMENT BAR -->
   <div class="announcement">
     <span>THE JIGGY ERA STARTS HERE</span>
-    <span>WORLDWIDE SHIPPING AVAILABLE</span>
-    <a href="#shop">EXPLORE THE COLLECTION ↗</a>
+    <span>GLOBAL SHIPPING — WORLDWIDE CULTURE</span>
+    <a href="#shop">DISCOVER THE COLLECTION ↗</a>
   </div>
 
+  <!-- MAIN NAVIGATION -->
   <header class="site-header">
-    <a class="brand" href="index.html">GODISJIGGY<span>®</span></a>
+
+    <a class="brand" href="index.html" aria-label="GODISJIGGY homepage">
+      GODISJIGGY<span>®</span>
+    </a>
+
     <nav class="desktop-nav" aria-label="Main navigation">
       <a href="#shop">SHOP</a>
       <a href="#collections">COLLECTIONS</a>
+      <a href="#jiggy-reels">JIGGY TV</a>
       <a href="#world">JIGGY WORLD</a>
       <a href="#story">OUR STORY</a>
     </nav>
+
     <div class="header-actions">
-      <button class="icon-button" id="search-toggle" aria-label="Search">⌕</button>
+
+      <button class="icon-button" id="search-toggle" aria-label="Open search">
+        ⌕
+      </button>
+
       <a class="header-link" href="account.html">ACCOUNT</a>
-      <button class="cart-button" id="cart-toggle">BAG <span id="cart-count">0</span></button>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">☰</button>
+
+      <button class="cart-button" id="cart-toggle">
+        BAG <span id="cart-count">0</span>
+      </button>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+        ☰
+      </button>
+
     </div>
   </header>
 
+  <!-- SEARCH PANEL -->
   <div class="search-panel" id="search-panel">
-    <input id="search-input" type="search" placeholder="Search the JIGGY universe..." aria-label="Search products">
+    <input
+      id="search-input"
+      type="search"
+      placeholder="Search the JIGGY universe..."
+      aria-label="Search products"
+    >
+
     <button id="search-close" aria-label="Close search">✕</button>
   </div>
 
   <main>
-    <section class="hero">
-      <div class="hero-grain"></div>
-      <div class="hero-copy">
-        <p class="eyebrow">INDEPENDENT SPIRIT. DISTINCT IDENTITY.</p>
-        <h1>BEYOND<br>FASHION.<br><span>A LIFESTYLE.</span></h1>
-        <p class="hero-description">For the ones who move differently. Discover a new expression of street culture.</p>
-        <a class="lime-button" href="#shop">ENTER THE JIGGY WORLD <span>↗</span></a>
-        <p class="hero-edition">COLLECTION 001 — GLOBAL RELEASE</p>
+
+    <!-- HERO SLIDESHOW -->
+    <section class="hero hero-slideshow" id="hero">
+
+      <div class="hero-slides">
+
+        <!-- SLIDE 01 -->
+        <article class="hero-slide is-active" data-slide="0">
+
+          <div class="hero-slide-image hero-image-one"></div>
+          <div class="hero-slide-overlay"></div>
+
+          <div class="hero-copy">
+
+            <p class="eyebrow">
+              GODISJIGGY® PRESENTS — COLLECTION 001
+            </p>
+
+            <h1>
+              BEYOND<br>
+              FASHION.<br>
+              <span>A LIFESTYLE.</span>
+            </h1>
+
+            <p class="hero-description">
+              For the ones who move differently.
+              A new expression of global street culture.
+            </p>
+
+            <a class="lime-button" href="#shop">
+              DISCOVER THE COLLECTION ↗
+            </a>
+
+            <p class="hero-edition">
+              THE JIGGY MOVEMENT — GLOBAL RELEASE
+            </p>
+
+          </div>
+
+          <span class="hero-slide-label">
+            01 / THE NEW MOVEMENT
+          </span>
+
+        </article>
+
+        <!-- SLIDE 02 -->
+        <article class="hero-slide" data-slide="1">
+
+          <div class="hero-slide-image hero-image-two"></div>
+          <div class="hero-slide-overlay"></div>
+
+          <div class="hero-copy">
+
+            <p class="eyebrow">
+              NO RULES. NO UNIFORM.
+            </p>
+
+            <h1>
+              MAKE<br>
+              YOUR OWN<br>
+              <span>RULES.</span>
+            </h1>
+
+            <p class="hero-description">
+              Individuality isn't worn.
+              It's lived.
+            </p>
+
+            <a class="lime-button" href="#collections">
+              EXPLORE YOUR STYLE ↗
+            </a>
+
+            <p class="hero-edition">
+              EXPRESSION WITHOUT LIMITS
+            </p>
+
+          </div>
+
+          <span class="hero-slide-label">
+            02 / OWN YOUR IDENTITY
+          </span>
+
+        </article>
+
+        <!-- SLIDE 03 -->
+        <article class="hero-slide" data-slide="2">
+
+          <div class="hero-slide-image hero-image-three"></div>
+          <div class="hero-slide-overlay"></div>
+
+          <div class="hero-copy">
+
+            <p class="eyebrow">
+              THE FUTURE HAS A LOOK
+            </p>
+
+            <h1>
+              NEVER<br>
+              JUST<br>
+              <span>ORDINARY.</span>
+            </h1>
+
+            <p class="hero-description">
+              Statement pieces. Unmistakable energy.
+              One global identity.
+            </p>
+
+            <a class="lime-button" href="#shop">
+              SHOP THE JIGGY EDIT ↗
+            </a>
+
+            <p class="hero-edition">
+              BUILT FOR THE DIFFERENT
+            </p>
+
+          </div>
+
+          <span class="hero-slide-label">
+            03 / NEVER BLEND IN
+          </span>
+
+        </article>
+
       </div>
-      <div class="hero-art" aria-label="GODISJIGGY campaign artwork">
-        <div class="orbit orbit-one"></div>
-        <div class="orbit orbit-two"></div>
-        <div class="hero-monogram">G</div>
-        <div class="hero-side-note">CREATE. WEAR. REPEAT.</div>
-        <div class="hero-stamp">JIGGY<br>BY<br>NATURE</div>
+
+      <!-- SLIDESHOW CONTROLS -->
+      <div class="hero-controls">
+
+        <button id="hero-prev" aria-label="Previous slide">
+          ←
+        </button>
+
+        <div class="hero-indicators">
+
+          <button
+            class="hero-dot is-active"
+            data-go="0"
+            aria-label="Go to slide 1">
+          </button>
+
+          <button
+            class="hero-dot"
+            data-go="1"
+            aria-label="Go to slide 2">
+          </button>
+
+          <button
+            class="hero-dot"
+            data-go="2"
+            aria-label="Go to slide 3">
+          </button>
+
+        </div>
+
+        <button id="hero-next" aria-label="Next slide">
+          →
+        </button>
+
+        <span class="hero-counter">01 — 03</span>
+
       </div>
-      <div class="hero-bottom">
-        <span>01 / THE NEW MOVEMENT</span>
-        <span>SCROLL TO DISCOVER ↓</span>
+
+      <div class="hero-scroll">
+        SCROLL TO DISCOVER ↓
       </div>
+
     </section>
 
+
+    <!-- BRAND BENEFITS -->
     <section class="benefit-strip" aria-label="Store benefits">
-      <div><b>01</b><span>GLOBAL DELIVERY</span></div>
-      <div><b>02</b><span>DESIGNED TO STAND OUT</span></div>
-      <div><b>03</b><span>SECURE CHECKOUT</span></div>
-      <div><b>04</b><span>THE JIGGY STANDARD</span></div>
+
+      <div>
+        <b>01</b>
+        <span>GLOBAL DELIVERY</span>
+      </div>
+
+      <div>
+        <b>02</b>
+        <span>DESIGNED TO STAND OUT</span>
+      </div>
+
+      <div>
+        <b>03</b>
+        <span>SECURE SHOPPING</span>
+      </div>
+
+      <div>
+        <b>04</b>
+        <span>THE JIGGY STANDARD</span>
+      </div>
+
     </section>
 
+
+    <!-- COLLECTION CATEGORIES -->
     <section class="section collections-section" id="collections">
+
       <div class="section-heading">
+
         <div>
           <p class="eyebrow">FIND YOUR EXPRESSION</p>
-          <h2>THE UNIVERSE<br>IS YOURS<span>.</span></h2>
+
+          <h2>
+            THE UNIVERSE<br>
+            IS YOURS<span>.</span>
+          </h2>
         </div>
-        <p class="section-note">Different forms. One unmistakable identity. Explore every side of GODISJIGGY.</p>
+
+        <p class="section-note">
+          Different forms. One unmistakable identity.
+          Explore every side of GODISJIGGY.
+        </p>
+
       </div>
+
       <div class="category-grid" id="category-grid">
+
         <button class="category-card category-apparel" data-category="Apparel">
-          <span class="category-number">01</span><span class="category-symbol">G</span>
+          <span class="category-number">01</span>
+          <span class="category-symbol">G</span>
           <span class="category-name">APPAREL ↗</span>
         </button>
+
         <button class="category-card category-footwear" data-category="Footwear">
-          <span class="category-number">02</span><span class="category-symbol">J.</span>
+          <span class="category-number">02</span>
+          <span class="category-symbol">J.</span>
           <span class="category-name">FOOTWEAR ↗</span>
         </button>
+
         <button class="category-card category-bags" data-category="Bags">
-          <span class="category-number">03</span><span class="category-symbol">GJ</span>
+          <span class="category-number">03</span>
+          <span class="category-symbol">GJ</span>
           <span class="category-name">BAGS ↗</span>
         </button>
+
         <button class="category-card category-headwear" data-category="Headwear">
-          <span class="category-number">04</span><span class="category-symbol">✳</span>
+          <span class="category-number">04</span>
+          <span class="category-symbol">✳</span>
           <span class="category-name">HEADWEAR ↗</span>
         </button>
+
         <button class="category-card category-jewellery" data-category="Jewellery">
-          <span class="category-number">05</span><span class="category-symbol">∞</span>
+          <span class="category-number">05</span>
+          <span class="category-symbol">∞</span>
           <span class="category-name">JEWELLERY ↗</span>
         </button>
+
         <button class="category-card category-accessories" data-category="Accessories">
-          <span class="category-number">06</span><span class="category-symbol">X</span>
+          <span class="category-number">06</span>
+          <span class="category-symbol">X</span>
           <span class="category-name">ACCESSORIES ↗</span>
         </button>
+
         <button class="category-card category-lifestyle" data-category="Lifestyle">
-          <span class="category-number">07</span><span class="category-symbol">°</span>
+          <span class="category-number">07</span>
+          <span class="category-symbol">°</span>
           <span class="category-name">LIFESTYLE ↗</span>
         </button>
+
       </div>
+
     </section>
 
+
+    <!-- PRODUCT SHOP -->
     <section class="section shop-section" id="shop">
+
       <div class="section-heading shop-heading">
+
         <div>
           <p class="eyebrow">THE FIRST 50 — MADE TO MOVE</p>
-          <h2>SHOP THE<br>JIGGY EDIT<span>.</span></h2>
+
+          <h2>
+            SHOP THE<br>
+            JIGGY EDIT<span>.
+            </span>
+          </h2>
         </div>
-        <p class="section-note">Explore the signature collection. Find the pieces that speak your language.</p>
+
+        <p class="section-note">
+          Explore the signature collection.
+          Find the pieces that speak your language.
+        </p>
+
       </div>
+
+      <!-- PRODUCT FILTERS -->
       <div class="shop-toolbar">
+
         <div class="filter-list" id="filters">
-          <button class="filter active" data-filter="All">ALL PIECES</button>
-          <button class="filter" data-filter="Apparel">APPAREL</button>
-          <button class="filter" data-filter="Footwear">FOOTWEAR</button>
-          <button class="filter" data-filter="Bags">BAGS</button>
-          <button class="filter" data-filter="Headwear">HEADWEAR</button>
-          <button class="filter" data-filter="Jewellery">JEWELLERY</button>
-          <button class="filter" data-filter="Accessories">ACCESSORIES</button>
-          <button class="filter" data-filter="Lifestyle">LIFESTYLE</button>
+
+          <button class="filter active" data-filter="All">
+            ALL PIECES
+          </button>
+
+          <button class="filter" data-filter="Apparel">
+            APPAREL
+          </button>
+
+          <button class="filter" data-filter="Footwear">
+            FOOTWEAR
+          </button>
+
+          <button class="filter" data-filter="Bags">
+            BAGS
+          </button>
+
+          <button class="filter" data-filter="Headwear">
+            HEADWEAR
+          </button>
+
+          <button class="filter" data-filter="Jewellery">
+            JEWELLERY
+          </button>
+
+          <button class="filter" data-filter="Accessories">
+            ACCESSORIES
+          </button>
+
+          <button class="filter" data-filter="Lifestyle">
+            LIFESTYLE
+          </button>
+
         </div>
+
         <label class="sort-control">
           SORT
+
           <select id="sort-select">
             <option value="featured">Featured</option>
             <option value="low">Price: low to high</option>
             <option value="high">Price: high to low</option>
             <option value="name">Name: A–Z</option>
           </select>
+
         </label>
+
       </div>
-      <p class="result-count" id="result-count">50 SIGNATURE PIECES</p>
-      <div class="product-grid" id="product-grid"></div>
-      <div class="shop-more"><span>THE COLLECTION DOESN'T FOLLOW.</span><a href="shop.html">VIEW THE FULL EDIT ↗</a></div>
+
+      <p class="result-count" id="result-count">
+        50 SIGNATURE PIECES
+      </p>
+
+      <div class="product-grid" id="product-grid">
+        <!-- Products will be rendered here by app.js -->
+      </div>
+
+      <div class="shop-more">
+        <span>THE COLLECTION DOESN'T FOLLOW.</span>
+        <a href="shop.html">VIEW THE FULL EDIT ↗</a>
+      </div>
+
     </section>
 
+
+    <!-- JIGGY CAMPAIGN -->
     <section class="campaign" id="world">
-      <div class="campaign-art"><span>GJ</span><small>NOT MADE TO BLEND IN.</small></div>
+
+      <div class="campaign-art">
+        <span>GJ</span>
+        <small>NOT MADE TO BLEND IN.</small>
+      </div>
+
       <div class="campaign-copy">
-        <p class="eyebrow">THIS IS JIGGY WORLD</p>
-        <h2>NOT A TREND.<br>AN IDENTITY<span>.</span></h2>
-        <p>Culture moves. Style evolves. We create for those who bring their own energy to everything they do.</p>
-        <a href="jiggy-world.html" class="outline-button">DISCOVER OUR WORLD ↗</a>
+
+        <p class="eyebrow">
+          THIS IS JIGGY WORLD
+        </p>
+
+        <h2>
+          NOT A TREND.<br>
+          AN IDENTITY<span>.</span>
+        </h2>
+
+        <p>
+          Culture moves. Style evolves.
+          We create for those who bring their own
+          energy to everything they do.
+        </p>
+
+        <a href="jiggy-world.html" class="outline-button">
+          DISCOVER OUR WORLD ↗
+        </a>
+
       </div>
+
     </section>
 
-    <section class="film-section" id="story">
-      <div class="film-top"><p class="eyebrow">THE BRAND. THE ENERGY. THE MOVEMENT.</p><span>GJ FILM / 001</span></div>
-      <div class="film-frame">
-        <div class="film-mark">GODISJIGGY®</div>
-        <div class="film-center"><span class="play-symbol">▶</span><p>THE JIGGY MANIFESTO</p></div>
-        <p class="film-caption">A DIFFERENT WAY TO SEE THE WORLD.</p>
-      </div>
-    </section>
 
-    <section class="newsletter">
-      <div><p class="eyebrow">GET IN THE KNOW</p><h2>JOIN THE<br>MOVEMENT<span>.</span></h2></div>
-      <form id="newsletter-form">
-        <label for="email">EXCLUSIVE RELEASES. FIRST ACCESS. NO NOISE.</label>
-        <div class="newsletter-input">
-          <input id="email" type="email" placeholder="Your email address" required>
-          <button type="submit">SIGN ME UP ↗</button>
+    <!-- JIGGY REELS / SHORT VIDEOS -->
+    <section class="section jiggy-reels" id="jiggy-reels">
+
+      <div class="section-heading">
+
+        <div>
+          <p class="eyebrow">
+            THE WORLD MOVES. WE MOVE DIFFERENT.
+          </p>
+
+          <h2>
+            JIGGY<br>
+            IN MOTION<span>.</span>
+          </h2>
         </div>
-        <small id="newsletter-message">By subscribing, you agree to receive GODISJIGGY updates.</small>
-      </form>
+
+        <p class="section-note">
+          Short films. Fresh energy. New perspectives.
+          Welcome to the visual side of GODISJIGGY.
+        </p>
+
+      </div>
+
+      <div class="reels-grid">
+
+        <!-- VIDEO SLOT 01 -->
+        <article class="reel-card reel-one">
+
+          <div class="reel-placeholder" data-video-slot="campaign-001">
+
+            <span class="reel-play">▶</span>
+
+            <span class="reel-tag">
+              AI CAMPAIGN / 001
+            </span>
+
+            <span class="reel-title">
+              THE JIGGY<br>
+              STATE OF MIND.
+            </span>
+
+          </div>
+
+          <p>01 — THE CAMPAIGN FILM</p>
+
+        </article>
+
+
+        <!-- VIDEO SLOT 02 -->
+        <article class="reel-card reel-two">
+
+          <div class="reel-placeholder" data-video-slot="style-002">
+
+            <span class="reel-play">▶</span>
+
+            <span class="reel-tag">
+              STYLE / 002
+            </span>
+
+            <span class="reel-title">
+              DRESS<br>
+              DIFFERENT.
+            </span>
+
+          </div>
+
+          <p>02 — STYLE IN MOTION</p>
+
+        </article>
+
+
+        <!-- VIDEO SLOT 03 -->
+        <article class="reel-card reel-three">
+
+          <div class="reel-placeholder" data-video-slot="culture-003">
+
+            <span class="reel-play">▶</span>
+
+            <span class="reel-tag">
+              CULTURE / 003
+            </span>
+
+            <span class="reel-title">
+              NEVER<br>
+              BLEND IN.
+            </span>
+
+          </div>
+
+          <p>03 — THE CULTURE EDIT</p>
+
+        </article>
+
+      </div>
+
+      <div class="reels-footer">
+
+        <p>
+          A CONSTANTLY EVOLVING VISUAL UNIVERSE.
+        </p>
+
+        <a href="jiggy-tv.html" class="reels-link">
+          ENTER JIGGY TV ↗
+        </a>
+
+      </div>
+
     </section>
+
+
+    <!-- BRAND FILM / MANIFESTO -->
+    <section class="film-section" id="story">
+
+      <div class="film-top">
+
+        <p class="eyebrow">
+          THE BRAND. THE ENERGY. THE MOVEMENT.
+        </p>
+
+        <span>GJ FILM / 001</span>
+
+      </div>
+
+      <div class="film-frame" data-video-slot="brand-manifesto">
+
+        <div class="film-mark">
+          GODISJIGGY®
+        </div>
+
+        <div class="film-center">
+
+          <span class="play-symbol">▶</span>
+
+          <p>THE JIGGY MANIFESTO</p>
+
+        </div>
+
+        <p class="film-caption">
+          A DIFFERENT WAY TO SEE THE WORLD.
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- BRAND STATEMENT -->
+    <section class="brand-statement">
+
+      <p class="eyebrow">
+        MORE THAN WHAT YOU WEAR.
+      </p>
+
+      <h2>
+        CREATE.<br>
+        WEAR.<br>
+        <span>REPEAT.</span>
+      </h2>
+
+      <p>
+        GODISJIGGY® is more than a fashion destination.
+        It's a statement of individuality, built for those
+        who refuse to blend in.
+      </p>
+
+    </section>
+
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+
+      <div>
+
+        <p class="eyebrow">
+          GET IN THE KNOW
+        </p>
+
+        <h2>
+          JOIN THE<br>
+          MOVEMENT<span>.</span>
+        </h2>
+
+      </div>
+
+      <form id="newsletter-form">
+
+        <label for="email">
+          EXCLUSIVE RELEASES. FIRST ACCESS. NO NOISE.
+        </label>
+
+        <div class="newsletter-input">
+
+          <input
+            id="email"
+            type="email"
+            placeholder="Your email address"
+            required
+          >
+
+          <button type="submit">
+            SIGN ME UP ↗
+          </button>
+
+        </div>
+
+        <small id="newsletter-message">
+          By subscribing, you agree to receive GODISJIGGY updates.
+        </small>
+
+      </form>
+
+    </section>
+
   </main>
 
+
+  <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="footer-brand"><a class="brand" href="index.html">GODISJIGGY<span>®</span></a><p>CREATE. WEAR. REPEAT.</p></div>
-    <div class="footer-column"><b>EXPLORE</b><a href="#shop">Shop all</a><a href="#collections">Collections</a><a href="jiggy-world.html">Jiggy World</a></div>
-    <div class="footer-column"><b>HELP</b><a href="shipping.html">Shipping</a><a href="returns.html">Returns</a><a href="contact.html">Contact</a></div>
-    <div class="footer-column"><b>THE BRAND</b><a href="#story">Our story</a><a href="jiggy-tv.html">Jiggy TV</a><a href="admin/index.html">Admin</a></div>
-    <div class="footer-bottom"><span>© 2026 GODISJIGGY®. ALL RIGHTS RESERVED.</span><span>BUILT FOR THE DIFFERENT.</span><a href="region.html">REGION / CURRENCY ↗</a></div>
+
+    <div class="footer-brand">
+
+      <a class="brand" href="index.html">
+        GODISJIGGY<span>®</span>
+      </a>
+
+      <p>CREATE. WEAR. REPEAT.</p>
+
+      <p class="footer-description">
+        BEYOND FASHION. A LIFESTYLE.
+      </p>
+
+    </div>
+
+
+    <div class="footer-column">
+
+      <b>EXPLORE</b>
+
+      <a href="#shop">Shop all</a>
+      <a href="#collections">Collections</a>
+      <a href="jiggy-world.html">Jiggy World</a>
+      <a href="jiggy-tv.html">Jiggy TV</a>
+
+    </div>
+
+
+    <div class="footer-column">
+
+      <b>HELP</b>
+
+      <a href="shipping.html">Shipping</a>
+      <a href="returns.html">Returns</a>
+      <a href="contact.html">Contact</a>
+
+    </div>
+
+
+    <div class="footer-column">
+
+      <b>THE BRAND</b>
+
+      <a href="#story">Our story</a>
+      <a href="account.html">My account</a>
+      <a href="wishlist.html">Wishlist</a>
+
+    </div>
+
+
+    <div class="footer-column">
+
+      <b>FOLLOW THE MOVEMENT</b>
+
+      <a href="#" aria-label="Instagram">Instagram ↗</a>
+      <a href="#" aria-label="TikTok">TikTok ↗</a>
+      <a href="#" aria-label="YouTube">YouTube ↗</a>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>
+        © 2026 GODISJIGGY®. ALL RIGHTS RESERVED.
+      </span>
+
+      <span>
+        BUILT FOR THE DIFFERENT.
+      </span>
+
+      <a href="region.html">
+        REGION / CURRENCY ↗
+      </a>
+
+    </div>
+
   </footer>
 
-  <aside class="cart-drawer" id="cart-drawer" aria-label="Shopping bag">
-    <div class="drawer-heading"><h2>YOUR BAG <span id="drawer-count">0</span></h2><button id="cart-close" aria-label="Close bag">✕</button></div>
-    <div id="cart-items" class="cart-items"><p class="empty-cart">Your bag is waiting for something JIGGY.</p></div>
-    <div class="cart-total"><span>SUBTOTAL</span><strong id="cart-total">$0</strong></div>
-    <a class="lime-button checkout-button" href="checkout.html">CONTINUE TO CHECKOUT ↗</a>
+
+  <!-- SHOPPING BAG DRAWER -->
+  <aside
+    class="cart-drawer"
+    id="cart-drawer"
+    aria-label="Shopping bag"
+  >
+
+    <div class="drawer-heading">
+
+      <h2>
+        YOUR BAG <span id="drawer-count">0</span>
+      </h2>
+
+      <button id="cart-close" aria-label="Close bag">
+        ✕
+      </button>
+
+    </div>
+
+    <div id="cart-items" class="cart-items">
+
+      <p class="empty-cart">
+        Your bag is waiting for something JIGGY.
+      </p>
+
+    </div>
+
+    <div class="cart-total">
+
+      <span>SUBTOTAL</span>
+
+      <strong id="cart-total">$0</strong>
+
+    </div>
+
+    <a class="lime-button checkout-button" href="checkout.html">
+      CONTINUE TO CHECKOUT ↗
+    </a>
+
   </aside>
+
+
+  <!-- DRAWER BACKDROP -->
   <div class="drawer-backdrop" id="drawer-backdrop"></div>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+
+  <!-- NOTIFICATION -->
+  <div
+    class="toast"
+    id="toast"
+    role="status"
+    aria-live="polite">
+  </div>
+
+
 </body>
 </html>
