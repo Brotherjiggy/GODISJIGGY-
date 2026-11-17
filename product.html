@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <title>Product — GODISJIGGY®</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="product.css">
+  <script src="products.js" defer></script>
+  <script src="product-page.js" defer></script>
+</head>
+<body class="product-page">
+  <div class="announcement">
+    <span>THE JIGGY ERA STARTS HERE</span>
+    <span>WORLDWIDE SHIPPING AVAILABLE</span>
+    <a href="index.html#shop">BACK TO THE COLLECTION ↗</a>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">GODISJIGGY<span>®</span></a>
+    <nav class="desktop-nav">
+      <a href="index.html#shop">SHOP</a>
+      <a href="index.html#collections">COLLECTIONS</a>
+      <a href="jiggy-world.html">JIGGY WORLD</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-link" href="wishlist.html">SAVED</a>
+      <button class="cart-button" id="product-cart-toggle">
+        BAG <span id="product-cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="product-main">
+    <div class="breadcrumbs">
+      <a href="index.html">HOME</a><span>/</span>
+      <a href="index.html#shop">SHOP</a><span>/</span>
+      <span id="breadcrumb-name">PRODUCT</span>
+    </div>
+
+    <section class="product-layout">
+      <div class="product-gallery">
+        <div class="main-product-image" id="main-product-image">
+          <span class="gallery-edition">GODISJIGGY® / ORIGINALS</span>
+          <span class="large-product-mark" id="large-product-mark">GJ</span>
+          <span class="image-index">01 / 04</span>
+        </div>
+        <div class="gallery-thumbnails">
+          <button class="gallery-thumb active" data-view="01">01</button>
+          <button class="gallery-thumb" data-view="02">02</button>
+          <button class="gallery-thumb" data-view="03">03</button>
+          <button class="gallery-thumb" data-view="04">04</button>
+        </div>
+      </div>
+
+      <div class="product-details">
+        <p class="eyebrow" id="product-category">GJ ORIGINALS</p>
+        <h1 id="product-name">PRODUCT NAME</h1>
+        <p class="product-sku" id="product-sku">GJ-001</p>
+        <div class="product-price-large" id="product-price">$0.00</div>
+
+        <div class="product-divider"></div>
+
+        <p class="option-label">SELECT COLOUR</p>
+        <div class="colour-options" id="colour-options">
+          <button class="colour-chip selected" data-colour="Onyx" aria-label="Onyx"></button>
+          <button class="colour-chip" data-colour="Stone" aria-label="Stone"></button>
+          <button class="colour-chip" data-colour="Volt" aria-label="Volt"></button>
+        </div>
+        <p class="selected-colour" id="selected-colour">ONYX</p>
+
+        <div class="size-heading">
+          <span class="option-label">SELECT SIZE</span>
+          <button class="size-guide" id="size-guide">SIZE GUIDE ↗</button>
+        </div>
+        <div class="size-options" id="size-options"></div>
+        <p class="size-message" id="size-message" aria-live="polite"></p>
+
+        <button class="add-product-button" id="add-product">ADD TO BAG — <span id="button-price">$0.00</span></button>
+        <button class="wishlist-button" id="save-product">♡ ADD TO WISHLIST</button>
+
+        <div class="product-description">
+          <h2>THE DETAILS</h2>
+          <p id="product-description">A signature GODISJIGGY original, created for those who move differently.</p>
+          <div class="detail-row"><span>PRODUCT CODE</span><span id="detail-sku">GJ-001</span></div>
+          <div class="detail-row"><span>COLLECTION</span><span>GJ ORIGINALS</span></div>
+          <div class="detail-row"><span>IDENTITY</span><span>BUILT FOR THE DIFFERENT</span></div>
+        </div>
+        <div class="product-service">
+          <p>↗ INTERNATIONAL SHIPPING OPTIONS</p>
+          <p>↗ SECURE CHECKOUT EXPERIENCE</p>
+          <p>↗ CUSTOMER SUPPORT</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="related-section">
+      <div class="related-heading">
+        <div><p class="eyebrow">COMPLETE THE LOOK</p><h2>MORE FROM<br>THE MOVEMENT<span>.</span></h2></div>
+        <a href="index.html#shop">SHOP ALL ↗</a>
+      </div>
+      <div class="related-grid" id="related-grid"></div>
+    </section>
+  </main>
+
+  <aside class="product-cart-drawer" id="product-cart-drawer">
+    <div class="drawer-heading">
+      <h2>YOUR BAG <span id="drawer-item-count">0</span></h2>
+      <button id="close-product-cart" aria-label="Close bag">✕</button>
+    </div>
+    <div id="product-cart-items" class="cart-items"></div>
+    <div class="cart-total"><span>SUBTOTAL</span><strong id="product-cart-total">$0.00</strong></div>
+    <a class="lime-button checkout-button" href="checkout.html">CONTINUE TO CHECKOUT ↗</a>
+  </aside>
+  <div class="product-cart-backdrop" id="product-cart-backdrop"></div>
+  <div class="toast" id="product-toast" role="status" aria-live="polite"></div>
+
+  <script>
+    document.getElementById("size-guide").addEventListener("click", () => {
+      alert("Size guide: XS, S, M, L, XL and XXL. Please check the product measurements before ordering.");
+    });
+  </script>
+</body>
+</html>
